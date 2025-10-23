@@ -1,10 +1,3 @@
-<?php
-require_once "auth.php";
-$user = current_user();
-
-$res = $conn->query("SELECT posts.*, users.name FROM posts JOIN users ON posts.user_id=users.id ORDER BY id DESC");
-
-?>
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -13,6 +6,14 @@ $res = $conn->query("SELECT posts.*, users.name FROM posts JOIN users ON posts.u
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<?php
+require_once "auth.php";
+$user = current_user();
+
+$res = $conn->query("SELECT posts.*, users.name FROM posts JOIN users ON posts.user_id=users.id ORDER BY id DESC");
+?>
+
 <header>
   <h1>🎮 Forum Gamingowe </h1>
   <nav>
@@ -38,6 +39,8 @@ $res = $conn->query("SELECT posts.*, users.name FROM posts JOIN users ON posts.u
       <?php endif; ?>
     </article>
   <?php endwhile; ?>
+
 </main>
+
 </body>
 </html>
