@@ -1,3 +1,17 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <title>Nowy post</title>
+  </head>
+<body>
+<h2>Nowy post</h2>
+<form method="post">
+  <input name="title" placeholder="Tytuł" required><br>
+  <textarea name="body" placeholder="Treść" required></textarea><br>
+  <button>Dodaj</button>
+</form>
+
 <?php
 require_once "auth.php";
 require_login();
@@ -12,13 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   header("Location: index.php");
 }
 ?>
-<!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Nowy post</title></head>
-<body>
-<h2>Nowy post</h2>
-<form method="post">
-  <input name="title" placeholder="Tytuł" required><br>
-  <textarea name="body" placeholder="Treść" required></textarea><br>
-  <button>Dodaj</button>
-</form>
-</body></html>
+
+
+</body>
+</html>
