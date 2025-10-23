@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+  <meta charset="utf-8">
+  <title>Edycja</title>
+  </head>
+<body>
+
+
 <?php
 require_once "auth.php";
 require_login();
@@ -19,13 +28,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   header("Location: index.php");
 }
 ?>
-<!DOCTYPE html>
-<html><head><meta charset="utf-8"><title>Edycja</title></head>
-<body>
+
 <h2>Edycja posta</h2>
 <form method="post">
   <input name="title" value="<?= htmlspecialchars($post['title']) ?>"><br>
   <textarea name="body"><?= htmlspecialchars($post['body']) ?></textarea><br>
   <button>Zapisz</button>
 </form>
-</body></html>
+
+</body>
+</html>
+
+
