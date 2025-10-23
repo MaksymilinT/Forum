@@ -1,0 +1,35 @@
+body {
+ font-family: sans-serif;
+ margin: 20px;
+background: #f3f4f6;
+ }
+
+header {
+    background: #1e293b;
+     color: #fff;
+     padding: 10px 20px;
+     margin-bottom: 20px;
+     }
+a {
+     color: #2563eb;
+      text-decoration: none;
+     }
+article {
+     background: #fff;
+      padding: 10px 15px;
+       border-radius: 8px;
+        margin-bottom: 10px;
+     }
+.meta { 
+    color: #555;
+     font-size: 0.9em;
+      margin-bottom: 5px;
+     }
+button { 
+    margin-top: 10px;
+     padding: 5px 10px;
+     }
+input, textarea { 
+    width: 100%;
+     margin: 5px 0;
+      padding: 5px; }
