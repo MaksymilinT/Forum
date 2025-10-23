@@ -5,7 +5,7 @@
     <title>Nowy post</title>
   </head>
 <body>
-<h2>Nowy post</h2>
+<h2> 📝 Nowy post</h2>
 <form method="post">
   <input name="title" placeholder="Tytuł" required><br>
   <textarea name="body" placeholder="Treść" required></textarea><br>
@@ -30,3 +30,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 </body>
 </html>
+
